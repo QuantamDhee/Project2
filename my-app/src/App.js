@@ -1,11 +1,11 @@
-import logo from './logo.svg';
 import './App.css';
 import React from 'react'
 import NarutoPage from './components/NarutoPage'
 
+
 const App = () => (
   <div className = "app">
-    <NarutoPage/>
+    <NarutoPage />
   </div>
 )
 
