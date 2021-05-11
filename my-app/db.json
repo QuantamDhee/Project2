@@ -1,12 +1,48 @@
 {
-    "something1": [
+    "characterList": [
         {
-
+            "id": 1,
+            "name": "Naruto",
+            "img_url": "https://www.otakukan.com/wp-content/uploads/2019/07/naruto-1.jpg"
+        },
+        {
+            "id": 2, 
+            "name": "Sasuke",
+            "img_url": "https://cdn.costumewall.com/wp-content/uploads/2018/09/sasuke-uchiha.jpg"
+        },
+        {
+            "id": 3,
+            "name": "Sakura",
+            "img_url": "https://static.wikia.nocookie.net/shipping/images/2/2a/Sakura_Haruno.png/revision/latest?cb=20160511172016"
         }
     ],
-    "something2": [
+    "characterDetail": [
         {
-
+            "id": 1, 
+            "name": "Naruto",
+            "img_url": "https://www.otakukan.com/wp-content/uploads/2019/07/naruto-1.jpg",
+            "details": [
+                "Naruto is the Main Character",
+                "Naruto has a fox sealed inside of him"
+            ]
+        },
+        {
+            "id": 2, 
+            "name": "Sasuke",
+            "img_url": "https://www.otakukan.com/wp-content/uploads/2019/07/naruto-1.jpg",
+            "details": [
+                "Sasuke is edgy boi",
+                "Sasuke always fights with the goat Naruto"
+            ]
+        },
+        {
+            "id": 3, 
+            "name": "Sakura",
+            "img_url": "https://www.otakukan.com/wp-content/uploads/2019/07/naruto-1.jpg",
+            "details": [
+                "Sakura likes Sasuke",
+                "Sakura can heal"
+            ]
         }
     ],
     "something3": [
