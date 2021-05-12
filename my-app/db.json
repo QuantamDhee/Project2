@@ -3,7 +3,8 @@
     {
       "id": 1,
       "name": "Naruto",
-      "img": "https://www.otakukan.com/wp-content/uploads/2019/07/naruto-1.jpg"
+      "img": "https://www.otakukan.com/wp-content/uploads/2019/07/naruto-1.jpg",
+      "desc": "kljlk"
     },
     {
       "id": 2,
@@ -24,16 +25,6 @@
       "name": "asdf",
       "img": "asdf",
       "id": 5
-    },
-    {
-      "name": "asdf",
-      "img": "asdf",
-      "id": 6
-    },
-    {
-      "name": "we",
-      "img": "fw",
-      "id": 7
     }
   ]
 }

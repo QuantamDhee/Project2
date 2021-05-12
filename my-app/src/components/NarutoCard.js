@@ -2,7 +2,7 @@ import React from 'react'
 
 class NarutoCard extends React.Component {
 
-    handleDelete = (e) =>{
+    handleDelete = (e) => {
         // console.dir(e.target.parentNode)
         this.props.deleteNinja(this.props.shin.id, e.target.parentNode)
     }
@@ -16,7 +16,7 @@ class NarutoCard extends React.Component {
                 <h4>{name}</h4>
                 <img src={img} alt={name} className='shin-img' />
                 <br></br>
-                <button className='info-btn'>👀</button>
+                {/* <button className='info-btn'>👀</button> */}
                 <button onClick={this.handleDelete} className='del-btn'>❌</button>
             </div>
         )

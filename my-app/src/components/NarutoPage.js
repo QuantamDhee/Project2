@@ -1,7 +1,10 @@
 import React, { Component } from "react";
+import Header from './Header'
 import NarutoCollection from './NarutoCollection'
 import NarutoForm from './NarutoForm'
 import { Route } from 'react-router-dom'
+import About from './About'
+// import NarutoBackground from '../pic/NarutoBackground.png'
 
 const url = 'http://localhost:3000/ninja'
 
@@ -10,6 +13,7 @@ class NarutoPage extends Component {
     state = {
         ninja: [],
         filteredNinja: [],
+        chosenNinja: {}
     }
 
     componentDidMount() {
@@ -50,8 +54,8 @@ class NarutoPage extends Component {
         const configObj = {
             method: 'DELETE',
             headers: {
-              'Content-Type': 'application/json',
-              'Accept': 'application/json'
+                'Content-Type': 'application/json',
+                'Accept': 'application/json'
             }
         }
         fetch(`http://localhost:3000/ninja/${id}`, configObj)
@@ -61,13 +65,18 @@ class NarutoPage extends Component {
 
     render() {
         return (
-            <div>
-                <header> Naruto Thangz </header>
-                <NarutoForm addNinja={this.addNinja} />
-                <NarutoCollection deleteNinja={this.deleteNinja} ninja={this.state.filteredNinja} />
+            <div >
+                <Header/>
+                <Route path='/ninja/about' component={About}/>
+                {/* <NarutoForm addNinja={this.addNinja} /> */}
+                {/* <NarutoCollection deleteNinja={this.deleteNinja} ninja={this.state.filteredNinja} /> */}
+                <Route path='/ninja/addNinja' render={() => <NarutoForm addNinja={this.addNinja}/>} />
+                <Route path='/ninja' render={()=> <NarutoCollection deleteNinja={this.deleteNinja} ninja={this.state.filteredNinja}/>} />
             </div>
         )
     }
 }
 
 export default NarutoPage
+
+// style={{ backgroundImage: `url(${NarutoBackground})` }} for background
