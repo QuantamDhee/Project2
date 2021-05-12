@@ -1,30 +1,32 @@
-import React from 'react'
-// import reactDom from 'react-dom'
+import React, { Component } from "react";
 import NarutoCollection from './NarutoCollection'
 import NarutoForm from './NarutoForm'
 
 const url = 'http://localhost:3000/ninja'
 
-class NarutoPage extends React.Component{
+class NarutoPage extends Component {
 
-    state ={
+    state = {
         ninja: [],
         filteredNinja: [],
     }
 
     componentDidMount() {
-        fetch('http://localhost:3000/ninja')
-        .then(r => r.json())
-        .then(ninjaArr => this.setState({
-            ninja: ninjaArr,
-            filteredNinja: ninjaArr
-        }))
+        fetch(url)
+            .then(r => r.json())
+            .then(ninjaArr => this.setState({
+                ninja: ninjaArr,
+                filteredNinja: ninjaArr
+            }))
     }
 
-    render(){
-        return(
-            <NarutoCollection ninja={this.state.filteredNinja}/>
-        )
+    render() {
+        return (
+            <div>
+            <header/> 
+            <NarutoCollection ninja={this.state.filteredNinja} />
+            </div>
+            )
     }
 }
 

@@ -13,7 +13,12 @@
         {
             "id": 3,
             "name": "Sakura",
-            "img": "https://static.wikia.nocookie.net/shipping/images/2/2a/Sakura_Haruno.png/revision/latest?cb=20160511172016"
+            "img": "https://i.pinimg.com/originals/c0/47/20/c04720ed6519e623091091756c4edc8a.jpg"
+        },
+        {
+            "id": 4,
+            "name": "Kakashi",
+            "img": "https://i.pinimg.com/originals/09/5c/d7/095cd770a29607d84dd548c7574f1f8b.jpg"
         }
     ]
    

@@ -3,15 +3,15 @@ import NarutoCard from './NarutoCard'
 
 const NarutoCollection = (props) => {
 
-    const rasengan = () => {
+    const renderNinja = () => {
         return props.ninja.map(shin => <NarutoCard key={shin.id} shin={shin} />)
     }
 
-        return(
-            <div id="naruto-collection" >
-                {rasengan()}
-            </div>
-        )
+    return (
+        <div id="naruto-collection" >
+            {renderNinja()}
+        </div>
+    )
 }
 
 export default NarutoCollection
