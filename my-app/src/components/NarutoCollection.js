@@ -2,10 +2,10 @@ import React from 'react'
 import NarutoCard from './NarutoCard'
 import { Link } from 'react-router-dom'
 
-const NarutoCollection = (props, deleteNinja) => {
+const NarutoCollection = (props, deleteNinja, chooseNinja) => {
 
     const renderNinja = () => {
-        return props.ninja.map(shin => <NarutoCard deleteNinja={props.deleteNinja} key={shin.id} shin={shin} />)
+        return props.ninja.map(shin => <NarutoCard chooseNinja={props.chooseNinja} deleteNinja={props.deleteNinja} key={shin.id} shin={shin} />)
     }
 
     return (

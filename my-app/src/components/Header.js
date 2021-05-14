@@ -7,8 +7,9 @@ const NinjaHeader = () => (
     </Link>
     <br/>
     <div>
-        <Link to='/' className='item-frontP'>Front Page</Link>
-        <Link to='/ninja/about' className='item'>About</Link>
+        <Link to='/' className='item-frontP'><button>Front Page</button></Link>
+        <Link to='/ninja/about' className='item'><button>About</button></Link>
+        <Link to='/ninja/addNinja' className='item-addChar'><button>Want to add Ninja 🐱‍🚀?</button></Link>
     </div>
   </div>
 );

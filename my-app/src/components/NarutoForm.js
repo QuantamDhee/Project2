@@ -5,7 +5,9 @@ class NarutoForm extends React.Component {
 
     state = {
         name: '',
-        img: ''
+        img: '',
+        desc: '',
+        quotes: [''],
     }
 
     handleSubmit = e => {
@@ -13,7 +15,8 @@ class NarutoForm extends React.Component {
         this.props.addNinja(this.state)
         this.setState({
             name: '',
-            img: ''
+            img: '',
+            desc: '',
         })
     }
 
@@ -32,12 +35,14 @@ class NarutoForm extends React.Component {
                         <input type="text" name="name" placeholder="Enter a ninja's name" value={this.state.name} onChange={this.handleChange} />
                         <input type="text" name="img" placeholder="Enter a ninja's image URL" value={this.state.img} onChange={this.handleChange} />
                         <br />
+                        <input type="text" name="desc" placeholder="Enter a ninja's description" value={this.state.desc} onChange={this.handleChange} />
+                        <br/>
                         <input type="submit" name="submit" className="submit" />
                       
                     </div>
                     <div>
                         <br/>
-                    <Link to='/ninja' className='item-viewNinja'> View Ninjas🐱‍👤</Link>
+                    <Link to='/ninja' className='item-viewNinja'><button> View Ninjas🐱‍👤</button></Link>
                     </div>
                 </form>
             </div>

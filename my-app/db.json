@@ -2,29 +2,75 @@
   "ninja": [
     {
       "id": 1,
-      "name": "Naruto",
+      "name": "Naruto Uzumaki",
       "img": "https://www.otakukan.com/wp-content/uploads/2019/07/naruto-1.jpg",
-      "desc": "kljlk"
+      "desc": "A Genin level ninja from the village of Konoha, Naruto has the NineTailed Fox sealed inside of him. He wished to surpass the hogake one day.",
+      "quotes": [
+        "I’m not gonna run away, I never go back on my word! That’s my nindo: my ninja way.",
+        "My friends were the first to accept me for who I am!"
+      ]
     },
     {
       "id": 2,
-      "name": "Sasuke",
-      "img": "https://cdn.costumewall.com/wp-content/uploads/2018/09/sasuke-uchiha.jpg"
+      "name": "Sasuke Uchiha",
+      "img": "https://cdn.costumewall.com/wp-content/uploads/2018/09/sasuke-uchiha.jpg",
+      "desc": "A Genin level ninja from the village of Konoha, Sasuke is the last surviving member of the Uchiha clan which was all killed by his older brother Itachi. Sasuke has devoted his life to killing his older brother.",
+      "quotes": [
+        "I hate a lot of things, and I don't particularly like anything.",
+        "I understand now. Even if I must take the devil's fruit, I must gain power. I am an avenger."
+      ]
     },
     {
       "id": 3,
-      "name": "Sakura",
-      "img": "https://i.pinimg.com/originals/c0/47/20/c04720ed6519e623091091756c4edc8a.jpg"
+      "name": "Sakura Haruno",
+      "img": "https://i.pinimg.com/originals/c0/47/20/c04720ed6519e623091091756c4edc8a.jpg",
+      "desc": "Genin level ninja from Konoha, not strong in combat but is intelligent and has talent to be a great medical Ninja",
+      "quotes": [
+        "Didn't you know? Women have to be strong in order to survive!",
+        "I may not have amazing weapons like a puppet in me, but what I do have is my master's contempt for losing!"
+      ]
     },
     {
       "id": 4,
-      "name": "Kakashi",
-      "img": "https://i.pinimg.com/originals/09/5c/d7/095cd770a29607d84dd548c7574f1f8b.jpg"
+      "name": "Kakashi Hatake",
+      "img": "https://i.pinimg.com/originals/09/5c/d7/095cd770a29607d84dd548c7574f1f8b.jpg",
+      "desc": "Team leader of Team 7 which consists of Naruto Uzumaki, Sasuke Uchiha, and Sakura Haruno. Kakashi appears to be aloof and disinterested but is one of the most highly skilled shinobi known for the ability to utilize over a thousand justus.",
+      "quotes": [
+        "In the ninja world, those who break the rules are scum, that's true. But those who abandon their friends are worse than scum!",
+        "In society, those who don't have many abilities tend to complain more."
+      ]
     },
     {
-      "name": "asdf",
-      "img": "asdf",
-      "id": 5
+      "id": 5,
+      "name": "Itachi Uchiha",
+      "img": "https://comicvine.gamespot.com/a/uploads/scale_medium/0/378/859934-god2vj0xj3.jpg",
+      "desc": "Itachi is the older borther of Sasuke Uchiha and is responsible for killing all the members of their clan only leaving Sasuke, his little brother alive. He is a part of the terrorist organization know as the Akatsuki.",
+      "quotes": [
+        "No single thing is perfect by itself. That's why we're born to attract other things to make up for what we lack.",
+        "Those who cannot acknowledge themselves will eventually fail.",
+        "We are humans, not fish. We don't know what kind fo people we truly are until the moment before our deaths. As death comes to embrace you you will realize what you are. that's what death is, don't you think?"
+      ]
+    },
+    {
+      "name": "Johndhee ",
+      "img": "https://i.pinimg.com/originals/b2/06/56/b20656e67dd82633f11eb4f840a81560.jpg",
+      "desc": "Best Ninja",
+      "id": 6
+    },
+    {
+      "name": "blat",
+      "img": "something",
+      "desc": "I hate this man",
+      "id": 7
+    },
+    {
+      "name": "",
+      "img": "",
+      "desc": "",
+      "quotes": [
+        ""
+      ],
+      "id": 8
     }
   ]
 }
