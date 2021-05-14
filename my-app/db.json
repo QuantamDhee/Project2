@@ -44,7 +44,7 @@
       "id": 5,
       "name": "Itachi Uchiha",
       "img": "https://comicvine.gamespot.com/a/uploads/scale_medium/0/378/859934-god2vj0xj3.jpg",
-      "desc": "Itachi is the older borther of Sasuke Uchiha and is responsible for killing all the members of their clan only leaving Sasuke, his little brother alive. He is a part of the terrorist organization know as the Akatsuki.",
+      "desc": "Itachi is the older brother of Sasuke Uchiha and is responsible for killing all the members of their clan only leaving Sasuke, his little brother alive. He is a part of the terrorist organization know as the Akatsuki.",
       "quotes": [
         "No single thing is perfect by itself. That's why we're born to attract other things to make up for what we lack.",
         "Those who cannot acknowledge themselves will eventually fail.",
@@ -71,6 +71,15 @@
         ""
       ],
       "id": 8
+    },
+    {
+      "name": "gasdfgasdg",
+      "img": "adfgadfg",
+      "desc": "adfgadfg",
+      "quotes": [
+        ""
+      ],
+      "id": 9
     }
   ]
 }

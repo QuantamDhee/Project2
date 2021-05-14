@@ -2,7 +2,7 @@ import React from 'react'
 
 export default function NinjaDetail(props, shin, closeNinja, addQuote) {
 
-    const { name, img, desc, quotes } = props.shin
+    const { name, img, desc, quotes} = props.shin
 
 
     // const handleChange = (e) =>{
@@ -11,8 +11,8 @@ export default function NinjaDetail(props, shin, closeNinja, addQuote) {
 
     const handleSubmit = (e) =>{
         e.preventDefault()
-        // console.log(e.target.quote)
-        props.addQuote(props.shin.id, e.target.quote)
+        console.log(e.target.quote)
+        // props.addQuote(props.shin.id, e.target.quotes)
     }
 
     // const showQuote = () =>{
@@ -32,9 +32,9 @@ export default function NinjaDetail(props, shin, closeNinja, addQuote) {
                 <div className="desc">Description: {desc}</div>
             </div>
             <div>
-                <div className="quote"> Quotes:{quotes.map((quote)=>{return <li>{quote}</li>})}</div>
+                <div className="quotes"> Quotes:{quotes.map((quote)=>{return <li>{quote}</li>})}</div>
             <form onSubmit={handleSubmit}>
-                <input type="text" name="quote" placeholder='enter quote' />
+                <input type="text" name="quotes" placeholder='enter quote' />
                 <input type="submit" name="submit" className="submit" />
             </form>
             </div>

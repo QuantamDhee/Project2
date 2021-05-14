@@ -26,6 +26,17 @@ class NarutoPage extends Component {
             }))
     }
 
+    fetchNinja() {
+        fetch(url)
+            .then(r => r.json())
+            .then(data => {
+                this.setState({
+                    ninja: data,
+                    filteredNinja: data,
+                })
+            })
+    }
+
     addNinja = (ninjaData) => {
         // console.log(ninjaData)
         const { name, img, desc, quotes } = ninjaData
@@ -53,28 +64,28 @@ class NarutoPage extends Component {
             })
     }
 
-    addQuote = (id, quote) => {
-        const quoteObj = this.state.ninja.find((shin) => shin.id === id)
-        const newQuotes = quoteObj.quotes
-        console.log(id, quote)
-        // newQuote.push(quote)
+    // addQuote = (quote, id) => {
+    //     let quoteObj = this.state.ninja.find((shin) => shin.id === id)
+    //     let quoteObj = this.state.filteredNinja.find((shin) => shin.id === id)
+    //     let newQuotes = quoteObj.quotes
+    //     console.log(quote, id)
+    //     newQuotes.push(quote)
 
-        // fetch(`http://localhost:3000/ninja/${id}`,
-        //     this.getConfigObj("PATCH", { quotes: newQuote }))
-        //     .then(r => r.json())
-        //     .then(this.fetchQuotes())
-        // const { quotes } = quoteDetail
-        // const newQuote = {
-        //     quotes
-        // }
-        // const configObj = {
-        //     method: 'PATCH',
-        //     headers: {
-        //         'Content-Type': 'application/json',
-        //         'Accept': 'application/json'
-        //     },
-        //     body: JSON.stringify(newQuote)
-        // }
+    //     fetch(`http://localhost:3000/ninja/${id}`,
+    //         this.getConfigObj("PATCH", { quotes: newQuotes }))
+    //         .then(r => r.json())
+    //         .then(this.fetchNinja())
+    // }
+
+    // getConfigObj = (method, body) => {
+    //     return {
+    //         method: method,
+    //         headers: {
+    //             'Content-Type': 'application/json',
+    //             'Accept': 'application/json'
+    //         },
+    //         body: JSON.stringify(body)
+    //     }
         // fetch(`http://localhost:3000/ninja/${id}`, configObj)
         //     .then(r => r.json())
         //     .then(newQuote =>{
@@ -82,7 +93,7 @@ class NarutoPage extends Component {
 
         //         })
         //     })
-    }
+    // }
 
     deleteNinja = (id, parentNode) => {
         console.log(id, parentNode)
