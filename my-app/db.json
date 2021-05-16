@@ -48,29 +48,9 @@
       "quotes": [
         "No single thing is perfect by itself. That's why we're born to attract other things to make up for what we lack.",
         "Those who cannot acknowledge themselves will eventually fail.",
-        "We are humans, not fish. We don't know what kind fo people we truly are until the moment before our deaths. As death comes to embrace you you will realize what you are. that's what death is, don't you think?"
+        "We are humans, not fish. We don't know what kind fo people we truly are until the moment before our deaths. As death comes to embrace you you will realize what you are. that's what death is, don't you think?",
+        "sadf"
       ]
-    },
-    {
-      "name": "Johndhee ",
-      "img": "https://i.pinimg.com/originals/b2/06/56/b20656e67dd82633f11eb4f840a81560.jpg",
-      "desc": "Best Ninja",
-      "id": 6
-    },
-    {
-      "name": "blat",
-      "img": "something",
-      "desc": "I hate this man",
-      "id": 7
-    },
-    {
-      "name": "",
-      "img": "",
-      "desc": "",
-      "quotes": [
-        ""
-      ],
-      "id": 8
     },
     {
       "name": "gasdfgasdg",
@@ -80,6 +60,24 @@
         ""
       ],
       "id": 9
+    },
+    {
+      "name": "Johndhee",
+      "img": "http://www.coogfans.com/uploads/db5902/original/3X/8/1/81173237ffa580ef710b0862fdddaac163274db1.jpeg",
+      "desc": "Coolest Ninja",
+      "quotes": [
+        "",
+        "Shadow Coder",
+        "I'm bouta fight!"
+      ],
+      "id": 10
+    },
+    {
+      "name": "gdfg",
+      "img": "",
+      "desc": "sdfg",
+      "quotes": [],
+      "id": 11
     }
   ]
 }

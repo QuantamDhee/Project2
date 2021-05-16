@@ -64,28 +64,28 @@ class NarutoPage extends Component {
             })
     }
 
-    // addQuote = (quote, id) => {
-    //     let quoteObj = this.state.ninja.find((shin) => shin.id === id)
-    //     let quoteObj = this.state.filteredNinja.find((shin) => shin.id === id)
-    //     let newQuotes = quoteObj.quotes
-    //     console.log(quote, id)
-    //     newQuotes.push(quote)
+    addQuote = (quote, id) => {
+        let quoteObj = this.state.ninja.find((shin) => shin.id === id)
+        // let quoteObj = this.state.filteredNinja.find((shin) => shin.id === id)
+        let newQuotes = quoteObj.quotes
+        console.log(quote, id)
+        newQuotes.push(quote)
 
-    //     fetch(`http://localhost:3000/ninja/${id}`,
-    //         this.getConfigObj("PATCH", { quotes: newQuotes }))
-    //         .then(r => r.json())
-    //         .then(this.fetchNinja())
-    // }
+        fetch(`http://localhost:3000/ninja/${id}`,
+            this.getConfigObj("PATCH", { quotes: newQuotes }))
+            .then(r => r.json())
+            .then(this.fetchNinja())
+    }
 
-    // getConfigObj = (method, body) => {
-    //     return {
-    //         method: method,
-    //         headers: {
-    //             'Content-Type': 'application/json',
-    //             'Accept': 'application/json'
-    //         },
-    //         body: JSON.stringify(body)
-    //     }
+    getConfigObj = (method, body) => {
+        return {
+            method: method,
+            headers: {
+                'Content-Type': 'application/json',
+                'Accept': 'application/json'
+            },
+            body: JSON.stringify(body)
+        }
         // fetch(`http://localhost:3000/ninja/${id}`, configObj)
         //     .then(r => r.json())
         //     .then(newQuote =>{
@@ -93,7 +93,7 @@ class NarutoPage extends Component {
 
         //         })
         //     })
-    // }
+    }
 
     deleteNinja = (id, parentNode) => {
         console.log(id, parentNode)

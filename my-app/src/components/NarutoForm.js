@@ -7,7 +7,7 @@ class NarutoForm extends React.Component {
         name: '',
         img: '',
         desc: '',
-        quotes: [''],
+        quotes: [],
     }
 
     handleSubmit = e => {

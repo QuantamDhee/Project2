@@ -11,8 +11,8 @@ export default function NinjaDetail(props, shin, closeNinja, addQuote) {
 
     const handleSubmit = (e) =>{
         e.preventDefault()
-        console.log(e.target.quote)
-        // props.addQuote(props.shin.id, e.target.quotes)
+        // console.log(e.target.quote)
+        props.addQuote(e.target.quotes.value, props.shin.id)
     }
 
     // const showQuote = () =>{
